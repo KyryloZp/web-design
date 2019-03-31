@@ -1,0 +1,140 @@
+.card {
+    font-size: 16px;
+    width: 327px; 
+    height: 611px;
+    background-color: #f5f4f9;
+    box-shadow: 2.4px 4.4px 59px #7a6be7;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0.04px;
+    &::after {
+        content: '';
+        width: 600px;
+        height: 396px;
+        position: absolute;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        left: -136.5px;
+        z-index: 0;
+        background: white;
+        top: 155px;
+        display: block;
+        clip: rect(auto, 463px, auto, 137px)
+    }
+    &_price, {
+        text-transform: uppercase;
+        font-family: 'bebasneue_thin', sans-serif;
+        margin-top: 35px;
+        text-align: center;
+        z-index: 1;
+    }
+    &_currency {
+        font-size: 24px;
+        font-weight: 100;
+        line-height: 36px;
+        display: inline-block;
+        vertical-align: top;
+        z-index: 1;
+    }
+    &_value {
+        font-size: 60px;
+        font-weight: 100;
+        line-height: 60px;
+        display: inline-block;
+        vertical-align: baseline;
+        z-index: 1;
+    }
+    &_time {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 36px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1;
+    }
+    &_title {
+        color: #181818;
+        font-family: "bebasneue_regular", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.08px;
+        position: relative;
+        text-align: center;
+        margin-top: 5px;
+        display: block;
+        z-index: 1;
+    }
+    &_package {
+        position: relative;
+        text-align: center;
+        margin: 55px 0 40px;
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.08px;
+        z-index: 1;
+    }
+    &_list {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    }
+    &_button {
+    position: absolute;
+    left: 63px;
+    bottom: -27px;
+    }
+    &_discount {
+        margin-top: 95px;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 53px;
+        text-align: center;
+        color: darkgrey;
+        font-family: "Roboto Light", sans-serif;
+    }
+    &_label {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        z-index: 1;
+        }
+    }
+
+.card_middle {
+    height: 693px;
+    font-size: 16px;
+    width: 327px; 
+    background-color: #f5f4f9;
+    box-shadow: 2.4px 4.4px 59px #7a6be7;
+    display: inline-block;
+    position: relative;
+        letter-spacing: 0.04px;
+        &::after  {
+        content: '';
+        width: 600px;
+        height: 424px;
+        position: absolute;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        left: -136.5px;
+        z-index: 0;
+        background: white;
+        top: 175px;
+        display: block;
+        clip: rect(auto, 463px, auto, 137px);
+        }
+        &__button {
+            position: absolute;
+            left: 63px;
+            bottom: 65px;
+            z-index: 1;   
+        }
+        & > .card_package {
+        margin: 65px 0 40px;
+    }
+}
+

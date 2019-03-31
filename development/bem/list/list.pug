@@ -1,0 +1,22 @@
+- var listArrayCenter = ['2  -  Wireframe option', '3  -  logo Design Variation', '2  -  Homepage Variation', '6  -  Innerpage', '1  -  Styleguide'];
+- var listArrayLeft = ['Brand idea', 'Logo Inovation', 'Structure of Design', 'Quality of Design', 'User friendly'];
+- var listArrayRight = ['PSD to HTML', 'HTML to Wordpress', 'PSD to Wordpress', 'HTML to Drupal', 'With Responsive'];
+
+
+
+mixin list(name)
+    ul.list_content
+        - var listchoose= name;
+            if listchoose == 'listArrayLeft'
+                each item in listArrayLeft
+                    li= item
+            else if listchoose == 'listArrayCenter'
+                each item in listArrayCenter
+                    li= item
+            else 
+                each item in listArrayRight
+                    li= item
+                
+                        
+
+

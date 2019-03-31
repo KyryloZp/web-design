@@ -1,0 +1,49 @@
+include ../title/title.pug
+include ../list/list.pug
+include ../label/label.pug
+include ../button/button.pug
+
+- var card_main = 'card';
+- var card_middle = 'card card__middle';
+
+mixin card(size, currency, value, time, title, icon_name, list, label_text, button_content, discount_text)
+    - var size_choose= size;
+        if size == card_main
+                div(class= 'card')
+                    .card_price
+                        .card_currency= currency
+                        .card_value= value
+                        .card_time= time
+                    .card_title
+                        +title(title)
+                    .card_package
+                        span(class= icon_name)
+                    .card_list
+                        +list(list)
+                    .card_label
+                        +label(label_text)
+                    .card_footer
+                        .card_button
+                            +button('button', button_content)
+                        .card_discount(discount_text)
+                            = discount_text
+        else 
+            div(class= 'card_middle')
+                .card_price
+                    .card_currency= currency
+                    .card_value= value
+                    .card_time= time
+                .card_title
+                    +title(title)
+                .card_package
+                    span(class= icon_name)
+                .card_list
+                    +list(list)
+                .card_label
+                    +label(label_text)
+                .card_footer
+                    .card_middle__button
+                        +button('button__red', button_content)
+                    .card_discount(discount_text)
+                        = discount_text
+                

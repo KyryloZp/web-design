@@ -1,0 +1,17 @@
+include bem/card/card.pug
+
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title Web-Design
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css")
+        link(rel="stylesheet", href="styles/fonts.css")
+        link(rel="stylesheet", href="fonts/themify-icons/themify-icons.css")
+        link(rel="stylesheet", href="styles/style.css")
+
+    body
+        .container
+            +card('card', '$', '29', '/HR', 'UI & UX', 'ti-palette', 'listArrayLeft', '', 'Place an order')
+            +card('card_middle', '$', '49', '/HR', 'WebDesign', "ti-paint-bucket", 'listArrayCenter', 'P', 'Place an order', 'Ordernow &  get 15% Discount')
+            +card('card', '$', '39', '/HR', 'Web development', "ti-hummer", 'listArrayRight', '', 'Place an order')
